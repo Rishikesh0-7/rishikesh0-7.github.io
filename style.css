@@ -23,7 +23,7 @@ body{
     display: flex;
     justify-content: space-between;
     padding: 0.5rem 1rem;
-    margin-left: 100px ;
+    margin-left: 50px ;
     margin-right: 100px ;
     margin-top: 25px ;
 }
@@ -100,6 +100,46 @@ body{
     font-size: 36px;
     margin-left: 50px;
 }
+
+
+/*Ovvvvvvvvvvvvvvvvvvvvvvvvvvvvver*/
+
+
+.main-content {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.name{
+    font-size: 4rem;
+}
+
+#typing-stuff {
+    color: var(--text-color);
+}
+
+#particles-js canvas {
+    display: block;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    -webkit-transition: opacity 0.8s ease, -webkit-transform 1.4s ease;
+    transition: opacity 0.8s ease, transform 1.4s ease;
+}
+  
+#particles-js {
+    position: absolute;
+    z-index: -10;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
 @media screen and (max-width: 600px) {
     .nav a{display: none;}
     .nav a.icon {
@@ -112,6 +152,7 @@ body{
         margin-left: 15px ;
         margin-right: 15px ;
     }
+    
 }
 
 
@@ -127,4 +168,8 @@ body{
     .new-nav li {
       padding: 0.5rem 0;
     }
+    .name{
+        font-size: 30px;
+    }
   } 
+

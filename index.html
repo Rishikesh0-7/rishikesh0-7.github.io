@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rishikesh.</title>
     <link rel="stylesheet" href="style.css">
+    <script src="./particles.js"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
     <link media="all" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -32,6 +35,18 @@
                 <a href="#">Contact</a>
         </div>
     </header>
+    <!---Over!-->
+
+
+    <section class="main-content">
+        <div id="particles-js"></div>
+        <div>
+            <h1 class="name">Hi! I'm Rishikesh.</h1>
+                <br>
+            <h3 >I'm a <span  id="typing-stuff"></h3>
+        </div>
+        
+    </section>
 </body>
 <script>
     function bars(){
@@ -42,5 +57,15 @@
         document.getElementById("navbar").style.width = "0%";
     }
     
+
+    const typed = new Typed("#typing-stuff", {
+        strings: ["Programmer", "Python Developer ", "Discord Bot Developer","Tech Savvy" , "Web Developer"],
+        loop: true,
+        typeSpeed: 80,
+        backSpeed: 40,
+    });
+    particlesJS.load('particles-js', 'particlesjs-config.json', () => {
+                console.log('Particles.js config loaded!');
+            });
 </script>
 </html>
