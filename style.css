@@ -3,15 +3,19 @@
     margin: 0;
 }
 
-
+html{
+    scroll-behavior: smooth;
+}
 :root{
     --bg-color : #1a1a1d;
     --text-color : #c3073f;
+    --light-text-color : #ff4e83;
 }
 
 body{
     background-color: #1a1a1d;
     color: white;
+    
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -140,6 +144,34 @@ body{
     top: 0;
 }
 
+
+.about-me{
+    margin-top: 50px;
+    width: 50%;
+    border-radius: 10px;
+    height: auto;
+    padding: 5px;
+    padding-bottom: 50px;
+    text-align: left;
+    background-color: #333333;
+}
+
+.about-me h1{
+    padding:30px;
+}
+
+.about-me p{
+    font-size: 18px;
+    padding-top:10px;
+    padding-left:30px;
+    font-family: sans-serif;
+}
+
+.link-about{
+    color: var(--light-text-color);
+    text-decoration: none;
+}
+
 @media screen and (max-width: 600px) {
     .nav a{display: none;}
     .nav a.icon {
@@ -170,6 +202,9 @@ body{
     }
     .name{
         font-size: 30px;
+    }
+    .about-me{
+        width: 70%;
     }
   } 
 

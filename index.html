@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rishikesh.</title>
+    <meta name="description" content="Hey 👋! I'm Rishikesh and this is my portfolio.">
+    <meta name="theme-color" content="#ff4e83">
     <link rel="stylesheet" href="style.css">
-    <script src="particles.js"></script>    
+    <script src="./particles.js"></script>    
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
     <link media="all" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,10 +18,10 @@
         <nav id="nav" class="nav">
             <h1>Rishikesh<span style="color: var(--text-color); ">.</span></h1>
             <ul>
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a id="link1" href="#" class="active">Home</a></li>
+                <li><a id="link2" href="#about-me">About</a></li>
+                <li><a id="link3" href="#">Projects</a></li>
+                <li><a id="link4" href="#">Contact</a></li>
                 <li>
                 <a href="javascript:void(0);" class="icon" onclick="bars()">
                     <i class="fa fa-bars"></i>
@@ -29,13 +31,13 @@
         </nav>
         <div id="navbar" class="sidebar">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="#" class="active">Home</a>
-                <a href="#">About</a>
-                <a href="#">Projects</a>
-                <a href="#">Contact</a>
+                <a href="#" class="active" onclick="closeNav()">Home</a>
+                <a href="#about-me" onclick="closeNav()">About</a>
+                <a href="#" onclick="closeNav()">Projects</a>
+                <a href="#" onclick="closeNav()">Contact</a>
         </div>
     </header>
-    
+    <!---Over!-->
 
 
     <section class="main-content">
@@ -44,6 +46,24 @@
             <h1 class="name">Hi! I'm Rishikesh.</h1>
                 <br>
             <h3 >I'm a <span  id="typing-stuff"></h3>
+        </div>
+        
+    </section>
+
+    <section class="main-content" id="about-me" >
+        <div class="about-me">
+            <h1><i class="fa fa-pencil" style="padding-right: 10px; color: var(--light-text-color);"></i>About Me</h1>
+            <p>
+                Hi , I'm Rishikesh! 👋
+                <br><br>
+            </p>
+            <p>
+                I'm a 13 year old Python Developer and a Discord Bot Developer.I'm also learning Javascript and React . 
+            </p>
+            <br><br>
+            <p>
+                I'm a Moderator at <a class="link-about" href="https://programming-hero.com/">Programming Hero</a> and currently working on my discord bot <a class="link-about" href="https://discord.com/oauth2/authorize?client_id=784021298832998430&scope=bot&permissions=4294442359">Xtreme.</a>
+            </p>
         </div>
         
     </section>
@@ -67,5 +87,7 @@
     particlesJS.load('particles-js', 'particlesjs-config.json', () => {
                 console.log('Particles.js config loaded!');
             });
+
+
 </script>
 </html>
