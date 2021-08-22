@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishikesh.</title>
+    <link rel="stylesheet" href="style.css">
+    <link media="all" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav id="nav" class="nav">
+            <h1>Rishikesh<span style="color: var(--text-color); ">.</span></h1>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+                <li>
+                <a href="javascript:void(0);" class="icon" onclick="bars()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+                </li>
+            </ul>
+        </nav>
+        <div id="navbar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#" class="active">Home</a>
+                <a href="#">About</a>
+                <a href="#">Projects</a>
+                <a href="#">Contact</a>
+        </div>
+    </header>
+</body>
+<script>
+    function bars(){
+        document.getElementById("navbar").style.width = "100%";
+    }
+
+    function closeNav(){
+        document.getElementById("navbar").style.width = "0%";
+    }
+    
+</script>
+</html>

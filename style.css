@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+:root{
+    --bg-color : #1a1a1d;
+    --text-color : #c3073f;
+}
+
+body{
+    background-color: #1a1a1d;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+/*.navigation Bar*/
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    margin-left: 100px ;
+    margin-right: 100px ;
+    margin-top: 25px ;
+}
+
+.nav h1{
+    font-size: 30px;
+}
+
+
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav a{
+    font-size: 1rem;
+    transition: 0.5s;
+    padding-left: 2.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+.active {
+    font-size: 1rem;
+    transition: 0.5s;
+    padding-left: 2.5rem;
+    color: var(--text-color);
+}
+
+
+.nav .icon {
+    display: none;
+}
+
+.nav a .active :hover{
+    color: white;
+}
+
+.nav a:hover{
+    color: var(--text-color);
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--bg-color);
+    overflow-x: hidden;
+    padding-top: 60px; 
+    transition: 0.5s;
+  }
+  
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 3rem;
+    text-align: center;
+    justify-content: center;
+    color: #818181;
+    display: block;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+@media screen and (max-width: 600px) {
+    .nav a{display: none;}
+    .nav a.icon {
+      float: right;
+      display: block;
+      font-size: 30px;
+      color: var(--text-color);
+    }
+    .nav{
+        margin-left: 15px ;
+        margin-right: 15px ;
+    }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .new-nav {
+      flex-direction: column;
+    }
+    .new-nav ul {
+      flex-direction: column;
+      padding-top: 0.5rem;
+    }
+    .new-nav li {
+      padding: 0.5rem 0;
+    }
+  } 
