@@ -19,7 +19,7 @@
             <h1>Rishikesh<span style="color: var(--text-color); ">.</span></h1>
             <ul>
                 <li><a id="link1" href="#" class="active">Home</a></li>
-                <li><a id="link2" href="#about-me">About</a></li>
+                <li><a id="link2" onClick="gotoa()">About</a></li>
                 <li><a id="link3" href="#">Projects</a></li>
                 <li><a id="link4" href="#">Contact</a></li>
                 <li>
@@ -69,6 +69,9 @@
     </section>
 </body>
 <script>
+    funtion gotoa() {
+        document.getElementById('about-me').scrollIntoView(true);
+    }
     function bars(){
         document.getElementById("navbar").style.width = "100%";
     }
