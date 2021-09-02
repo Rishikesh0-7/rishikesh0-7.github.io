@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="./particles.js"></script>    
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <link rel="shortcut icon" href="https://joeschmoe.io/api/v1/rishikesh" type="image/x-icon">
+    <link rel="shortcut icon" href="https://joeschmoe.io/api/v1/rishikesh"  type="image/x-icon">
     <link media="all" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -18,8 +18,8 @@
         <nav id="nav" class="nav">
             <h1>Rishikesh<span style="color: var(--text-color); ">.</span></h1>
             <ul>
-                <li><a id="link1" href="#" class="active">Home</a></li>
                 <li><a id="link2" onClick="gotoa()">About</a></li>
+                <li><a id="link2" onClick="gotos()">Skills</a></li>
                 <li><a id="link3" href="#">Projects</a></li>
                 <li><a id="link4" href="#">Contact</a></li>
                 <li>
@@ -31,8 +31,8 @@
         </nav>
         <div id="navbar" class="sidebar">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="#" class="active" onclick="closeNav()">Home</a>
                 <a  onclick="closeNav(); gotoa()">About</a>
+                <a  onclick="closeNav(); gotos()">Skills</a>
                 <a href="#" onclick="closeNav()">Projects</a>
                 <a href="#" onclick="closeNav()">Contact</a>
         </div>
@@ -51,9 +51,9 @@
         
     </section>
 
-    <section class="main-content" id="about-me" >
-        <div id="particles-js"></div>
+    <section class="main-content" id="about-me">
         <div class="about-me">
+
             <h1><i class="fa fa-pencil" style="padding-right: 10px; color: var(--light-text-color);"></i>About Me</h1>
             <p>
                 Hi , I'm Rishikesh! 👋
@@ -65,14 +65,53 @@
             <br><br>
             <p>
                 I'm a Moderator at <a class="link-about" href="https://programming-hero.com/">Programming Hero</a> and currently working on my discord bot <a class="link-about" href="https://discord.com/oauth2/authorize?client_id=784021298832998430&scope=bot&permissions=4294442359">Xtreme.</a>
-            </p>
+            </p>        
+        </div>
+        
+    </section>
+
+
+    <section class="main-content" id="skills">
+        
+        <div class="skills-container">
+            <h1><i class="fa fa-trophy" style="padding-right: 10px; color: var(--light-text-color);"></i>My Skills</h1>
+            <p> <img src="https://img.icons8.com/color/48/000000/python--v1.png" width="15"/> Python</p>
+            <div class="skill-content">
+                <div class="skills python">75%</div>
+            </div>
+            
+            <p> <img src="https://img.icons8.com/color/48/000000/html-5--v1.png" width="15" style="padding-right: 5px;"/>HTML & CSS</p>
+            <div class="skill-content">
+                <div class="skills html">55%</div>
+            </div>
+            <p><img src="https://img.icons8.com/color/48/000000/javascript--v1.png" width="20"/>Javascript</p>
+            <div class="skill-content">
+                <div class="skills js">25%</div>
+            </div>
         </div>
         
     </section>
 </body>
+
+<!--<h1><i class="fa fa-pencil" style="padding-right: 10px; color: var(--light-text-color);"></i>About Me</h1>
+            <p>
+                Hi , I'm Rishikesh! 👋
+                <br><br>
+            </p>
+            <p>
+                I'm a Python Developer and a Discord Bot Developer from India.I'm also learning Javascript and React . 
+            </p>
+            <br><br>
+            <p>
+                I'm a Moderator at <a class="link-about" href="https://programming-hero.com/">Programming Hero</a> and currently working on my discord bot <a class="link-about" href="https://discord.com/oauth2/authorize?client_id=784021298832998430&scope=bot&permissions=4294442359">Xtreme.</a>
+            </p>-->
+
 <script>
     function gotoa() {
         document.getElementById('about-me').scrollIntoView(true);
+    }
+    function gotos() {
+        document.getElementById('skills').scrollIntoView(true);
     }
     function bars(){
         document.getElementById("navbar").style.width = "100%";

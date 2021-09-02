@@ -91,8 +91,8 @@ body{
     left: 0;
     background-color: var(--bg-color);
     overflow-x: hidden;
-    padding-top: 60px; 
-    transition: 0.5s;
+    padding-top: 60px;
+    transition: 0.1s;
   }
   
 
@@ -106,7 +106,6 @@ body{
     color: #818181;
     display: block;
     align-items: center;
-    transition: 0.3s;
 }
 
 .sidebar .closebtn {
@@ -122,7 +121,7 @@ body{
 
 
 .main-content {
-    height: 80vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -180,6 +179,71 @@ body{
     text-align: left;
     background-color: #333333;
 }
+
+
+.skills-container{
+    margin-top: 100px;
+    width: 50%;
+    border-radius: 10px;
+    height: auto;
+    padding: 10px;
+    padding-bottom: 50px;
+    text-align: left;
+    background-color: #333333;
+}
+
+
+.skill-content{
+    margin-left: 30px;
+    padding: 5px;
+    background-color: var(--bg-color);
+    border-radius: 50px;
+
+}
+
+
+.skills{
+    padding-left: 10px;
+    text-align: center;
+    color: var(--bg-color);
+    font-weight: 500;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+
+.python{
+    width: 75%;
+    background-color: rgb(59, 77, 243);
+    border-radius: 50px;
+
+}
+
+.js{
+    width: 25%;
+    background-color: rgb(228, 216, 41);
+    border-radius: 50px;
+}
+
+.html{
+    width: 55%;
+    background-color: rgb(250, 109, 27);
+    border-radius: 50px;
+
+
+}
+
+.skills-container h1{
+    padding:30px;
+}
+
+.skills-container p{
+    font-size: 18px;
+    padding-top:30px;
+    padding-left:30px;
+    font-family: sans-serif;
+}
+
 
 .about-me h1{
     padding:30px;
@@ -242,7 +306,28 @@ body{
         font-size: 30px;
     }
     .about-me{
-        width: 70%;
+        width: 90%;
+    }
+    .skills-container{
+        width: 90%;
+    }
+    .about-me p{
+        font-size: 18px;
+        padding-top:10px;
+        padding-left:20px;
+        font-family: sans-serif;
+    }
+    .skills-container p{
+        font-size: 18px;
+        padding-top:30px;
+        padding-left:10px;
+        font-family: sans-serif;
+    }
+    .skill-content{
+        margin: 0;
+    }
+    .skill-content p{
+        padding-left: 0;
     }
   } 
 
