@@ -18,5 +18,6 @@
       <li><a href="https://github.com">Github</a></li>
       <li><a href="https://figma.com">Figma</a></li>
       <li><a href="https://fontawesome.com/icons">Font awesome Icons</a></li>
+      <li><a href="https://github.com/MrArkon/mrarkon.github.io">README.md Inspired From here</a></li>
    </ul>
 </div>
