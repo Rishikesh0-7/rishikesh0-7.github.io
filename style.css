@@ -155,6 +155,8 @@ body{
     top: 0;
 }
 
+
+
 .socials{
     font-size: 25px;
     cursor: pointer;
@@ -201,6 +203,10 @@ body{
 
 }
 
+.skills-container p{
+    padding-bottom: 5px;
+}
+
 
 .skills{
     padding-left: 10px;
@@ -210,26 +216,47 @@ body{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-
+.percent{
+    text-align: right;
+}
 
 .python{
     width: 75%;
-    background-color: rgb(59, 77, 243);
+    background-color: var(--light-text-color);;
     border-radius: 50px;
-
+    font-size: 2px;
+    color: var(--text-color);;
 }
 
 .js{
     width: 25%;
-    background-color: rgb(228, 216, 41);
+    background-color: var(--light-text-color);
+    color: var(--light-text-color);;
     border-radius: 50px;
+    font-size: 2px;
+}
+.gra{
+    width: 55%;
+    background-color: var(--light-text-color);
+    color: var(--light-text-color);;
+    border-radius: 50px;
+    font-size: 2px;
+}
+
+.react{
+    width: 35%;
+    background-color: var(--light-text-color);
+    color: var(--light-text-color);;
+    border-radius: 50px;
+    font-size: 2px;
 }
 
 .html{
-    width: 55%;
-    background-color: rgb(250, 109, 27);
+    width: 85%;
+    background-color: var(--light-text-color);;
+    color: var(--light-text-color);;
     border-radius: 50px;
-
+    font-size: 2px;
 
 }
 
