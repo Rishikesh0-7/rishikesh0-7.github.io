@@ -30,8 +30,9 @@ body{
     padding: 0.5rem 1rem;
     margin-left: 50px ;
     margin-right: 100px ;
-    position:sticky;
+    position:fixed;
     top:0;
+    width:100%;
     margin-top: 25px ;
 }
 
