@@ -1,5 +1,5 @@
 <div align="center">
-   <img width=100 style="border-radius:50%" height=100 src="./images/rishikesh-me.png"/>
+   <img width=150 style="border-radius:50%" height=150 src="./images/rishikesh-me.png"/>
    <h3 >My Website</h3>
    
    <p>An awesome personal website made by me to showcase my skills and projects.</p>
