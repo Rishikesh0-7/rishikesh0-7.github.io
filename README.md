@@ -15,8 +15,8 @@
 
 </h3>
    <ul>
-      <li><a href="https//github.com">Github</a></li>
-      <li><a href="https//figma.com">Figma</a></li>
-      <li><a href="https//fontawesome.com/icons">Font awesome Icons</a></li>
+      <li><a href="https://github.com">Github</a></li>
+      <li><a href="https://figma.com">Figma</a></li>
+      <li><a href="https://fontawesome.com/icons">Font awesome Icons</a></li>
    </ul>
 </div>
