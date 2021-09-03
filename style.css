@@ -29,6 +29,8 @@ body{
     justify-content: space-between;
     padding: 0.5rem 1rem;
     margin-left: 50px ;
+    overflow: hidden;
+    z-index:999;
     margin-right: 100px ;
     position:fixed;
     top:0;
