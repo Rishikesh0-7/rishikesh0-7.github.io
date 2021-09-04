@@ -358,7 +358,7 @@ body{
     flex-direction: row;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .nav a{display: none;}
     .nav a.icon {
       float: right;
