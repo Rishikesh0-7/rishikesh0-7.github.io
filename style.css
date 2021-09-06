@@ -308,43 +308,79 @@ body{
 
 
 .project-holder-right{
-    width: 10%;
+    width: 100%;
+    height: 150px;
     flex: 50%;
     display: flex;
+    position: relative;
     align-items: center;
     margin: 10px;
+    position: relative;
     justify-content: center;
-    background-color: var(--particle-bg-color);
 
 }
 
 .project-holder-right img{
     width: 100%;
+
     background-size: cover;
     height: 100%;
     border-radius: 10px;
-
 }
 
 .project-holder-left{
-    width: 10%;
-    background-color: var(--particle-bg-color);
-
+    width: 100%;
+    height: 150px;
+    flex: 50%;
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
     margin: 10px;
-    border-radius: 10px;
-    flex: 50%;
+    justify-content: center;
 }
 
 .project-holder-left img{
     width: 100%;
     height: 100%;
+    position: relative;
     background-size: cover;
     border-radius: 10px;
 
 }
+
+.overlay{
+    position: absolute;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    transition: .5s;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    opacity: 0;
+}
+
+.overlay button {
+    cursor: pointer;
+    padding: 10px;
+    background-color:var(--light-text-color);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+
+.project-holder-left:hover .overlay{
+    opacity: 1;
+}
+.project-holder-right:hover .overlay{
+    opacity: 1;
+}
+
 
 
 .grid-1{
@@ -353,12 +389,11 @@ body{
 }
 
 .grid-2{
-    margin-top: 50px;
     display: flex;
     flex-direction: row;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
     .nav a{display: none;}
     .nav a.icon {
       float: right;
@@ -398,14 +433,11 @@ body{
     .skills-container p{
         font-size: 18px;
         padding-top:30px;
-        padding-left:10px;
+        padding-left:0px;
         font-family: sans-serif;
     }
     .skill-content{
         margin: 0;
-    }
-    .skill-content p{
-        padding-left: 0;
     }
     .projects-container{
         width: 90%;
@@ -423,6 +455,16 @@ body{
     }
     .project-holder-right{
         width: 95%;
+    }
+    .project-holder-left img{
+        width: 100%;
+        position: relative;
+        height: 150px;
+    }
+    .project-holder-right img{
+        width: 100%;
+        position: relative;
+        height: 150px;
     }
   } 
 
