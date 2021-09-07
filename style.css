@@ -254,17 +254,6 @@ body{
     padding:30px;
 }
 
-.contact{
-    margin-top: 100px;
-    width: 50%;
-    border-radius: 10px;
-    height: auto;
-    padding: 10px;
-    padding-bottom: 50px;
-    align-items: right;
-    background-color: #333333;
-
-}
 
 
 .about-me p{
@@ -393,7 +382,75 @@ body{
     flex-direction: row;
 }
 
-@media only screen and (max-width: 600px) {
+
+
+
+.contact-container{
+    margin-top: 50px;
+    width: 50%;
+    border-radius: 10px;
+    height: auto;
+    padding: 5px;
+    padding-bottom: 50px;
+    text-align: left;
+    background-color: #333333;
+}
+
+.contact-container h1{
+    padding:30px;
+}
+
+
+.input{
+    margin-left: 30px;
+    padding: 20px;
+    margin-top: 10px;
+    outline: none;
+    color: #c3073f;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+}
+
+
+.long{
+    width: 80%;
+}
+.email{
+    width: 50%;
+    margin-left: 10px;
+}
+
+.textarea{
+    height: 200px;
+}
+
+.name-email{
+    display: flex;
+    flex-direction: row;
+}
+
+.send{
+    background-color: var(--light-text-color);
+    padding: 20px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin-left: 30px;
+    cursor: pointer;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+
+.contact-container p{
+    padding-top:10px;
+    padding-left:30px;
+    font-family: sans-serif;
+    padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 800px) {
     .nav a{display: none;}
     .nav a.icon {
       float: right;
@@ -443,6 +500,7 @@ body{
         width: 90%;
         margin-top: 150vh;
     }
+
     .grid-1{
         flex-direction: column;
     }
@@ -465,6 +523,26 @@ body{
         width: 100%;
         position: relative;
         height: 150px;
+    }
+    .name-email{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-container{
+        width: 90%;
+        margin-top: 250vh;
+    }
+    .contact-container .input{
+        margin-left: 00px;
+    }
+    .email{
+        width: 88%;
+    }
+    .long{
+        width: 88%;
+    }
+    .send{
+        margin-left: 30%;
     }
   } 
 

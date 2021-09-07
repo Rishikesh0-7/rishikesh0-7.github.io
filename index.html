@@ -22,7 +22,7 @@
                 <li><a id="link2" onClick="gotoa()">About</a></li>
                 <li><a id="link2" onClick="gotos()">Skills</a></li>
                 <li><a id="link3" onclick="gotop()">Projects</a></li>
-                <li><a id="link4" >Contact</a></li>
+                <li><a id="link4" onclick="gotoc()">Contact</a></li>
                 <li>
                 <a href="javascript:void(0);" class="icon" onclick="bars()">
                     <i class="fa fa-bars"></i>
@@ -35,7 +35,7 @@
                 <a  onclick="closeNav(); gotoa()">About</a>
                 <a  onclick="closeNav(); gotos()">Skills</a>
                 <a  onclick="closeNav(); gotop()">Projects</a>
-                <a  onclick="closeNav()">Contact</a>
+                <a  onclick="closeNav(); gotoc()">Contact</a>
         </div>
     </header>
     <!---Over!-->
@@ -154,6 +154,29 @@
         </div>
         
     </section>
+
+
+
+    <section class="main-content" id="contact">
+        
+        <div class="contact-container">
+            <h1><i class="fa fa-phone" style="padding-right: 10px; color: var(--light-text-color);"></i>Contact Me</h1>
+            <p>
+                Don't like Forms ? <a style="text-decoration: none; color:#ff4e83;" href="mailto:rishikeshanandh@gmail.com">Email Me</a> 👋
+            </p>
+            <form onsubmit="sendEmail()">
+                <div class="name-email">
+                    <input class="input" type="text"  placeholder="Your Name" name="" id=""> 
+                    <input class="input email" type="email" id="email" placeholder="Your Email" id="">
+                </div>
+                <input class="input long" type="text" id="sub" name="" placeholder="Subject" id=""><br>
+                <textarea class="input long textarea" id="message" type="text" name="" placeholder="Message" id=""></textarea><br>
+                <button class="send" type="submit" ><i class="fa fa-send"></i> Send Message</button>
+            </form>
+        </div>
+        
+    </section>
+
 
 </body>
 

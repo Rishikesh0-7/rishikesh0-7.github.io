@@ -21,10 +21,21 @@ function gotos() {
 function gotop() {
     document.getElementById('projects').scrollIntoView(true);
 }
+function gotoc() {
+    document.getElementById('contact').scrollIntoView(true);
+}
+
 function bars(){
     document.getElementById("navbar").style.width = "100%";
 }
 
 function closeNav(){
     document.getElementById("navbar").style.width = "0%";
+}
+
+
+function sendEmail() {
+    const sub = document.getElementById("sub").value
+    const mes = document.getElementById("message").value
+    window.open(`mailto:rishikeshanandh@gmail.com?subject=${sub}&body=${mes}`)
 }
