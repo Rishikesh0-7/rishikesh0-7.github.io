@@ -388,6 +388,7 @@ body{
 .contact-container{
     margin-top: 100px;
     width: 50%;
+    margin-bottom:50px;
     border-radius: 10px;
     height: auto;
     padding: 5px;
