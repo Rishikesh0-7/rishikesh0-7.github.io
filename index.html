@@ -4,182 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rishikesh.</title>
-    <meta name="description" content="Hey 👋! I'm Rishikesh and this is my portfolio.">
-    <meta name="theme-color" content="#ff4e83">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Rishikesh</title>
+    <link href="https://fonts.cdnfonts.com/css/cubano" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/sofia-pro" rel="stylesheet">
+    <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+    <script src="./script.js"></script>
     <link rel="stylesheet" href="style.css">
-    <script src="./particles.js"></script>    
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <link rel="shortcut icon" href="./images/rishikesh-me.png"  type="image/x-icon">
-    <link media="all" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+                
+                
 </head>
-<body>
-
-    <header>
-        <nav id="nav" class="nav">
-            <h1>Rishikesh<span style="color: var(--text-color); ">.</span></h1>
-            <ul>
-                <li><a id="link2" onClick="gotoa()">About</a></li>
-                <li><a id="link2" onClick="gotos()">Skills</a></li>
-                <li><a id="link3" onclick="gotop()">Projects</a></li>
-                <li><a id="link4" onclick="gotoc()">Contact</a></li>
-                <li>
-                <a href="javascript:void(0);" class="icon" onclick="bars()">
-                    <i class="fa fa-bars"></i>
-                  </a>
-                </li>
-            </ul>
-        </nav>
-        <div id="navbar" class="sidebar">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a  onclick="closeNav(); gotoa()">About</a>
-                <a  onclick="closeNav(); gotos()">Skills</a>
-                <a  onclick="closeNav(); gotop()">Projects</a>
-                <a  onclick="closeNav(); gotoc()">Contact</a>
+<body style="background-color: #12181b;">
+    <div class="hero-content"  style="background-color: #12181b  ;">
+        <div data-aos="zoom-in">
+            <h1>Hi, I'am</h1>
+            <h1 style="color: #c3073f;">Rishikesh Anandh</h1>
+            <h2>A 14yrs old boy from India. Who loves to play games and eat chocolates.</h2>
+            <a href="https://github.com/Rishikesh0-7"><button>GITHUB</button></a>
+            <a href="mailto:rishikeshanandh@gmail.com"><button>EMAIL</button></a>
         </div>
-    </header>
-    <!---Over!-->
+        <div data-aos="zoom-in">
+            <img src="./illu/Programming-amico.png" class="max-w-md" alt="">
+        </div>
+        
+    </div>
+    <div class="end-line">
+        <hr>
+    </div>
 
-
-    <section class="main-content">
-        <div id="particles-js"></div>
+    <div class="about-me" style="background-color: #12181b  ;">
+        <h1 data-aos="fade-up">😁 ABOUT ME</h1>
+        <div data-aos="zoom-in">
+            <div>
+                <h2>Hi, My name is <span style="color:#c3073f;">Rishikesh Anandh</span>. I'am from Kerala, India. I am a 14yrs old high school boy. I like to play video games and eat chocolates. My favourite subjects in school include <span style="color:#c3073f;">Maths and Sceince</span>. I am someone who likes, loves or is enthusiastic about technology basically a <span style="color:#c3073f;">Technophile</span>. I started programming in 2020, my favourite programming language is <span style="color:#c3073f;">Python</span>.</h2>
+            </div>
+            <div>
+                <img src="./illu/Mention-bro.png" class="max-w-md" alt="">
+            </div>
+        </div>
+        
+    </div>
+    <div class="end-line">
+        <hr>
+    </div>
+    <div class="skill-sec" style="background-color: #12181b  ;">
+        <h1 data-aos="fade-up">🚀 SKILLS</h1>
         <div>
-            <img style="width: 40%;" src="./images/rishikesh-me.png" alt="">
-            <h1 class="name">Hi! I'm Rishikesh.</h1>
-                <br>
-            <h3 >I'm a <span  id="typing-stuff"></h3>
-        </div>
-        
-    </section>
-
-    <section class="main-content" id="about-me">
-
-        <div class="about-me"> 
-
-            <h1><i class="fa fa-pencil" style="padding-right: 10px; color: var(--light-text-color);"></i>About Me</h1>
-            <p>
-                Hi , I'm Rishikesh! 👋
-                <br><br>
-            </p>
-            <p>
-                I'm a Python Developer and a Discord Bot Developer from India.I'm also learning Javascript and React . 
-            </p>
-            <br><br>
-            <p>
-                I'm a Moderator at <a class="link-about" href="https://programming-hero.com/">Programming Hero</a> and currently working on my discord bot <a class="link-about" href="https://discord.com/oauth2/authorize?client_id=784021298832998430&scope=bot&permissions=4294442359">Xtreme.</a>
-            </p>        
-        </div>
-        
-    </section>
-
-
-    <section class="main-content" id="skills">
-        
-        <div class="skills-container">
-            <h1><i class="fa fa-trophy" style="padding-right: 10px; color: var(--light-text-color);"></i>My Skills</h1>
-            <p> Python</p>
-            <div class="skill-content">
-                <div class="skills python">75%</div>
-            </div>
-            
-            <p>HTML & CSS</p>
-            <div class="skill-content">
-                <div class="skills html">85%</div>
-            </div>
-            <p>React</p>
-            <div class="skill-content">
-                <div class="skills react">35%</div>
-            </div>
-            <p>Javascript</p>
-            <div class="skill-content">
-                <div class="skills js">25%</div>
-            </div>
-            <p>Graphic Designing</p>
-            <div class="skill-content">
-                <div class="skills gra">55%</div>
+            <div data-aos="zoom-in">
+                <div class="skill-card">
+                    <img src="./illu/python.png" class="max-w-md" alt="">
+                    <h2>Python</h2>
+                </div>
+                <div class="skill-card">
+                    <img src="./illu/html.png" class="max-w-md" alt="">
+                    <h2>HTML</h2>
+                </div>
+                <div class="skill-card">
+                    <img src="./illu/css.png" class="max-w-md" alt="">
+                    <h2>CSS</h2>
+                </div>
+                <div class="skill-card">
+                    <img src="./illu/js.png" class="max-w-md" alt="">
+                    <h2>JS</h2>
+                </div>
+                <div class="skill-card">
+                    <img src="./illu/react.png" class="max-w-md" alt="">
+                    <h2>BASIC REACT</h2>
+                </div>
+                
             </div>
         </div>
         
-    </section>
-
-
-
-
-
-    <section class="main-content" id="projects">
-        
-        <div class="projects-container">
-            <h1><i class="fa fa-code" style="padding-right: 10px; color: var(--light-text-color);"></i>Projects</h1>
-            <div class="grid-1" >
-                <div class="project-holder-left">
-                    <img src="./images/flappy-bird.jpg" width="50%" alt="">
-                    <div class="overlay">
-                        <a href="https://github.com/Rishikesh0-7/Flappy-Bird-2.0" target="_blank" rel="noopener noreferrer"><button><i class="fa fa-code" style="margin-right: 5px;"></i>Repo</button></a>
-                    </div>
-                </div>
-                <div class="project-holder-right">
-                    <img src="./images/brainshop.png" alt="">
-                    <div class="overlay">
-                        <a href="https://pypi.org/project/Brainshop/" target="_blank" rel="noopener noreferrer"><button><i class="fa fa-globe" style="margin-right: 5px;"></i>Live Site</button></a>
-                    </div>
-                </div>
-                <div class="project-holder-left">
-                    <img src="./images/super-r-chat-app.png" alt="">
-                    <div class="overlay">
-                        <a href="https://chatapp.codewithrishi.repl.co" target="_blank" rel="noopener noreferrer"><button><i class="fa fa-globe" style="margin-right: 5px;"></i>Live Site</button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-2">
-                <div class="project-holder-left">
-                    <img src="./images/xtreme.png" alt="" >
-                    <div class="overlay">
-                        <a href="https://discord.com/oauth2/authorize?client_id=784021298832998430&scope=bot%20applications.commands&permissions=4294442359" target="_blank" rel="noopener noreferrer"><button><i class="fa fa-send" style="margin-right: 5px;"></i>Invite</button></a>
-                    </div>
-                </div>
-                <div class="project-holder-right">
-                    <img src="./images/clever-bot.png" alt="">
-                    <div class="overlay">
-                        <a href="https://discord.com/oauth2/authorize?client_id=842782681498124359&scope=bot&permissions=391232" target="_blank" rel="noopener noreferrer"><button><i class="fa fa-send" style="margin-right: 5px;"></i>Invite</button></a>
-                    </div>
-                </div>
-                <div class="project-holder-left">
-                    <img src="./images/style-gen.png" alt="">
-                    <div class="overlay">
-                        <a href="https://rishikesh0-7.github.io/StyleGenerator" target="_blank" rel="noopener noreferrer"><button><i class="fa fa-globe" style="margin-right: 5px;"></i>Live Site</button></a>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-        
-    </section>
-
-
-
-    <section class="main-content" id="contact">
-        
-        <div class="contact-container">
-            <h1><i class="fa fa-phone" style="padding-right: 10px; color: var(--light-text-color);"></i>Contact Me</h1>
-            <p>
-                Don't like Forms ? <a style="text-decoration: none; color:#ff4e83;" href="mailto:rishikeshanandh@gmail.com">Email Me</a> 👋
-            </p>
-            <form onsubmit="sendEmail()">
-                <div class="name-email">
-                    <input class="input" type="text"  placeholder="Your Name" name="" id=""> 
-                    <input class="input email" type="email" id="email" placeholder="Your Email" id="">
-                </div>
-                <input class="input long" type="text" id="sub" name="" placeholder="Subject" id=""><br>
-                <textarea class="input long textarea" id="message" type="text" name="" placeholder="Message" id=""></textarea><br>
-                <button class="send" type="submit" ><i class="fa fa-send"></i> Send Message</button>
-            </form>
-        </div>
-        
-    </section>
-
-
+    </div>
+    <div class="end-line">
+        <hr>
+    </div>
 </body>
-
-<script src="./main.js"></script>
-
+<footer>
+    <script>
+        AOS.init({
+            delay:300,
+            mirror:true,
+        });
+    </script>
+</footer>
 </html>
