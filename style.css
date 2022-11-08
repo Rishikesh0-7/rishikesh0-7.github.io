@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 .hero-content{
     display: flex;
     height: 95vh;
@@ -5,7 +9,7 @@
     justify-content: center;
     flex-direction: row;
     grid-template-rows: repeat(2, minmax(0, 1fr));
-    gap: 1rem;
+    gap: 20%;
 }
 
 .hero-content div h1{
@@ -21,18 +25,21 @@
     color: #b2becd;
     line-height: 1; 
     padding: 0.75rem;
-    width: 15%;
+    width: 9rem;
     margin-top: 2rem;
     margin-right: 1rem;
-    border: 1px #c3073f solid;
-    transform: skewX(10deg);
+    border: 3px #bf00ff solid;
+    /* transform: skewX(10deg); */
     transition: 0.5s;
-    border-radius: 2px;
+    border-radius: 100px;
+    
 }
+
+
 .hero-content div button:hover{
     color: white;
-    background-color: #c3073f;
-    transform: skewx(-10deg);
+    background-color: #d041ff;
+    /* transform: skewx(-10deg); */
 }
 
 .hero-content div h2{
@@ -65,10 +72,11 @@
 }
 
 .about-me h1{
-    color: #c3073f;
+    color: #bf00ff;
     font-family: 'Cubano' ,sans-serif;
     font-size: 3rem;
     line-height: 1;
+    margin-bottom: 2rem;
 }
 
 .about-me div{
@@ -100,7 +108,7 @@
 }
 
 .skill-sec h1{
-    color: #c3073f;
+    color: #bf00ff;
     font-family: 'Cubano' ,sans-serif;
     font-size: 3rem;
     line-height: 1;
@@ -120,14 +128,14 @@
 .skill-sec div h2{
     font-size: 1.5rem;
     font-family: 'Cubano', sans-serif;
-    color: #b2becd;
+    color: white;
     line-height: 1.5rem;
     padding: 10px;
     width: 100%;
     text-align: center;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    background-color: #c3073f;
+    background-color: #bf00ff;
 }
 
 .skill-sec .skill-card{
@@ -150,6 +158,80 @@
 }
 
 
+
+
+.project-sec {
+    display: flex;
+    height: 80vh;
+    margin-top: 2rem;
+    align-items: center;
+    flex-direction: column;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.project-sec  h1{
+    color: #bf00ff;
+    font-family: 'Cubano' ,sans-serif;
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.project-sec  div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 2rem;
+    gap: 1rem;
+    width: 85%;
+}
+
+/* .project-sec .pro{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.project-sec h2{
+    font-size: 1.5rem;
+    font-family: 'Sofia Pro', sans-serif;
+    color: #b2becd;
+} */
+
+.project-sec .pro-card h2{
+    font-size: 1.5rem;
+    font-family: 'Cubano', sans-serif;
+    color: #b2becd;
+    line-height: 1.5rem;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #bf00ff;
+}
+
+.project-sec  .pro-card{
+    background-color: #2a2e35;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.project-sec  .pro-card:hover{
+    transform: translate(0, -10px);
+    box-shadow: 4px 4px 30px black;
+}
+
+.project-sec .pro-card img{
+    width: 100%;
+}
 
 
 @media only screen and (max-width : 600px){
