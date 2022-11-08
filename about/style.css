@@ -1,60 +1,45 @@
 html{
     scroll-behavior: smooth;
-    box-sizing: border-box;
 }
 
-body{
-    background-color: #0f0f0f;
-}
-.hero-content{
+
+.about-me{
     display: flex;
-    height: 90vh;
+    height: max-content;
+    margin-top: 10rem;
+    align-items: center;
+    flex-direction: column;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.about-me h1{
+    color: #c3073f;
+    font-family: 'Cubano' ,sans-serif;
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 2rem;
+}
+
+.about-me div{
+    display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: row-reverse;
     grid-template-rows: repeat(2, minmax(0, 1fr));
-    gap: 20%;
-}
-
-.hero-content div h1{
-    font-size: 3rem;
-    font-family: 'Cubano', sans-serif;
-    color: white;
-    line-height: 1;
-}
-
-.hero-content div button{
-    font-size: 0.75rem;
-    font-weight: 700;
-    color: #b2becd;
-    line-height: 1; 
-    padding: 0.75rem;
-    width: 6rem;
-    margin-top: 2rem;
-    margin-right: 1rem;
-    border: 2px #c3073f solid;
-    transform: skewx(-10deg);
-    transition: 0.5s;
-    border-radius: 5px;
-    
+    gap: 1rem;
+    width: 85%;
 }
 
 
-.hero-content div button:hover{
-    color: white;
-    background-color: #c3073f;
-}
-
-.hero-content div h2{
+.about-me div h2{
     font-size: 1.5rem;
     font-family: 'Sofia Pro', sans-serif;
     color: #b2becd;
     line-height: 2rem;
-    letter-spacing: 1px;
 }
 
 .nav{
-    display: block;
     display: flex;
     margin-top: 10px;
     gap: 60%;
@@ -96,12 +81,14 @@ body{
 }
 
 @media only screen and (max-width : 600px){
+    .nav{
+        gap: 20%;
+    }
+
     .hero-content{
         flex-direction: column-reverse;
         width: 100vw;
-        padding: 20px;
-        justify-content: top;
-        text-align: left;
+        padding: 10px;
 
     }
     .hero-content img{
@@ -119,5 +106,39 @@ body{
         width: 40%;
     }
 
-    
+    .about-me{
+        gap: 0;
+        height: max-content;
+    }
+    .about-me div{
+        padding: 7px;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .about-me div img{
+        width: 100%;
+    }
+
+    .about-me h1{
+        font-size: 2rem;
+    }
+
+    .about-me div h2{
+        font-size: 1.25rem;
+    }
+
+    .skill-sec h1{
+        font-size: 2rem;
+    }
+    .skill-sec{
+        height: max-content;
+        padding-bottom: 1rem;
+    }
+    .skill-sec div{
+        flex-direction: column;
+    }
+    .skill-sec .skill-card{
+        width: 100%;
+    }
 }
