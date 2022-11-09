@@ -96,6 +96,15 @@ body{
 }
 
 @media only screen and (max-width : 600px){
+    .nav{
+        float: 50%;
+        gap: 4%;
+    }
+    .nav{
+        width: 90%;
+        margin-left: 5%;
+    }
+
     .hero-content{
         flex-direction: column-reverse;
         width: 100vw;
