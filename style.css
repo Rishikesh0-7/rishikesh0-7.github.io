@@ -53,58 +53,123 @@ body{
     letter-spacing: 1px;
 }
 
-.nav{
-    display: block;
-    display: flex;
-    margin-top: 10px;
-    gap: 60%;
-    width: 100%;
-    flex-direction: row;
-    align-items: center;
-    padding: 10px;
-}
-
-.nav .logo{
-    margin-left: 2%;
-    font-size: 1.8rem;
-    color: white;
-    line-height: 1rem;
-    font-family: 'Cubano' , sans-serif;
-}
-.nav ul{
-    list-style-type: none;
-}
-.nav ul li{
-    float: left;
-}
-
-.nav ul li a{
-    position: relative;
-    color: white;
-    display: block;
+.scroll{
     text-align: center;
-    padding: 10px;
-    font-weight: 600;
-    font-family: 'Sofia pro' , sans-serif;
-    font-size: 1rem;
-    text-decoration: none;
-    transition: 0.5s;
+    color: white;
+    font-family: 'Cubano' ,sans-serif;
+    font-size: 4rem;
 }
 
-.nav ul li a:hover{
+.about-me{
+    display: flex;
+    height: 90vh;
+    margin-top: 10rem;
+    align-items: center;
+    flex-direction: column;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.about-me h1{
     color: #c3073f;
+    font-family: 'Cubano' ,sans-serif;
+    font-size: 3rem;
+    line-height: 1;
+    padding-bottom: 4px;
+    border-bottom: 3px dashed white;
+    margin-bottom: 2rem;
 }
 
-@media only screen and (max-width : 600px){
-    .nav{
-        float: 50%;
-        gap: 4%;
-    }
-    .nav{
-        width: 90%;
-        margin-left: 5%;
-    }
+.about-me div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    width: 85%;
+}
 
+
+.about-me div h2{
+    font-size: 1.5rem;
+    font-family: 'Sofia Pro', sans-serif;
+    color: #b2becd;
+    line-height: 2rem;
+}
+
+
+.project{
+    display: flex;
+    height: 90vh;
+    margin-top: 10rem;
+    align-items: center;
+    flex-direction: column;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.project .items{
+    display: flex;
+    margin: 5rem;
+    flex-direction: row;
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    gap: 4rem;
+}
+
+.project h1{
+    color: #c3073f;
+    font-family: 'Cubano' ,sans-serif;
+    font-size: 3rem;
+    line-height: 1;
+    padding-bottom: 4px;
+    border-bottom: 3px dashed white;
+    margin-bottom: 2rem;
+}
+
+
+.project .card{
+    background-color: #0f0f0f;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    max-height: 35vh !important;
+    min-height: 35vh !important;
+    min-width: 15vw;
+    height: 100%;
+}
+
+.project .card img{
+    max-height: 15vh;
+    min-height: 15vh;
+    min-width: 15vw;
+    width: 100%;
+    height: 100%;
+}
+
+.project .card h2{
+    font-family: 'Cubano' ,sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.project .card h3{
+    font-family: 'Sofia Pro' ,sans-serif;
+    text-align: center;
+    color: white;
+    height: fit-content;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+@media only screen and (max-width : 768px){
     .hero-content{
         flex-direction: column-reverse;
         width: 100vw;
@@ -127,6 +192,38 @@ body{
     .hero-content div button{
         width: 40%;
     }
+    .about-me{
+        gap: 0;
+        height: max-content;
+    }
+    .about-me div{
+        padding: 7px;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
 
-    
+    .about-me div img{
+        width: 100%;
+    }
+
+    .about-me h1{
+        font-size: 2rem;
+    }
+
+    .about-me div h2{
+        font-size: 1.25rem;
+    }
+    .project .items{
+        flex-direction: column;
+    }   
+
+    .project .card{
+        width: 90%;
+        min-height: 100%;
+        min-width: 90%;
+        max-width: 90%;
+        max-height: 40vh !important;
+        min-height: 40vh !important;
+        height: 100%;
+    }
 }
